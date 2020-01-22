@@ -1,12 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    [SerializeField] float increase=10f;
-    [SerializeField] float padding=1f;
+    [SerializeField] float increase = 10f;
+    [SerializeField] float padding = 1f;
+    [SerializeField] GameObject laserprefab;
+    [SerializeField] float laservelocity;
+    [SerializeField] float firingperiod;
+    Coroutine currentcoroutine;
     float xmin, xmax, ymin, ymax;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +23,35 @@ public class movement : MonoBehaviour
     void Update()
     {
         move();
+        laserfire();
+    }
+
+    private void laserfire()
+    {
+
+        
+        if(Input.GetButtonDown("Fire1"))
+        {
+           currentcoroutine= StartCoroutine(firecontinous());
+            
+        }
+
+        if(Input.GetButtonUp("Fire1"))
+        {
+            StopCoroutine(currentcoroutine);
+        }
+    }
+
+    IEnumerator firecontinous()
+    {
+
+        while(true)
+        {
+            GameObject laser = Instantiate(laserprefab, transform.position, Quaternion.identity) as GameObject;
+            laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, laservelocity);
+            yield return new WaitForSeconds(firingperiod);
+            
+        }
     }
 
     private void cameraset()
