@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class wave : MonoBehaviour
 {
-    [SerializeField] List<Transform> enemy;
-    [SerializeField] float wavespeed=1f;
+    [SerializeField]waveconfig waved;
+    List<Transform> enemy;
+
+    [SerializeField] float wavespeed = 1f;
     int index = 0;
- 
     void Start()
     {
+        enemy = waved.Getwave();
         wavespeed = wavespeed * Time.deltaTime;
     }
 
@@ -39,21 +41,20 @@ public class wave : MonoBehaviour
             index++;
             if (index < 2)
             {
-                
+
                 Debug.Log(index);
             }
             Debug.Log(index);
-            if(index==3)
+            if (index == 3)
             {
                 Destroy(gameObject);
             }
         }
 
-            
+
         else
         {
             transform.position = Vector2.MoveTowards(enemyposition, currentphase, wavespeed);
         }
     }
 }
-
