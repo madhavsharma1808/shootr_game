@@ -18,8 +18,9 @@ public class spawn : MonoBehaviour
     IEnumerator waveroute(waveconfig waver)
     {
         for (int i = 0; i < waver.Getenemynumber(); i++)
-        {
-            Instantiate(waver.Getenemy(), waver.Getwave()[0].transform.position, Quaternion.identity);
+        {   
+            var newenemy=Instantiate(waver.Getenemy(), waver.Getwave()[0].transform.position, Quaternion.identity);
+            newenemy.GetComponent<wave>().Setwavepath(waver);
             yield return new WaitForSeconds(waver.Gettimebspawns());
         }
 

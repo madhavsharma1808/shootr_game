@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class wave : MonoBehaviour
 {
-    [SerializeField]waveconfig waved;
+    waveconfig waved;
     List<Transform> enemy;
 
     [SerializeField] float wavespeed = 1f;
@@ -12,6 +11,7 @@ public class wave : MonoBehaviour
     void Start()
     {
         enemy = waved.Getwave();
+        Debug.Log(enemy);
         wavespeed = wavespeed * Time.deltaTime;
     }
 
@@ -27,8 +27,17 @@ public class wave : MonoBehaviour
 
     }
 
+    public void Setwavepath(waveconfig waveconfig)
+    {
+        waved = waveconfig;
+
+
+       
+    }
+
     private void waveform()
     {
+
         float enemypositionx = transform.position.x;
         float enemypositiony = transform.position.y;
         Vector2 enemyposition = new Vector2(enemypositionx, enemypositiony);

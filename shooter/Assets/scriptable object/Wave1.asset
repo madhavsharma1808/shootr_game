@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave1
   m_EditorClassIdentifier: 
   enemy: {fileID: 3561025960837699861, guid: c086786b6cd6a1b44afe7e95199339a9, type: 3}
-  wave: {fileID: 8099568767667462919, guid: a8332ec3c042f844f9cc37cda15130b4, type: 3}
+  wave: {fileID: 2709206231728518859, guid: a8332ec3c042f844f9cc37cda15130b4, type: 3}
   timebspawns: 1
   random: 1
   numberofenemies: 5

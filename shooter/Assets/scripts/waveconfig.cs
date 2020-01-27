@@ -20,7 +20,7 @@ public class waveconfig : ScriptableObject
     }
 
 
-    public List<Transform> Getwave()   
+    public List<Transform> Getwave()   //we have done this bcz we have a game object and we want to return a list 
     {
         List<Transform> wavenew = new List<Transform>();
         foreach(Transform child in wave.transform)
