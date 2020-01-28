@@ -63,7 +63,7 @@ public class wave : MonoBehaviour
 
         else
         {
-            transform.position = Vector2.MoveTowards(enemyposition, currentphase, wavespeed);
+            transform.position = Vector2.MoveTowards(enemyposition, currentphase, waved.Getspeed()*Time.deltaTime);
         }
     }
 }

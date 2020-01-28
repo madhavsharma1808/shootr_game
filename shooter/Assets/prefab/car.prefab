@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8085556596824818511}
   - component: {fileID: 8085556596824818508}
   - component: {fileID: 8085556596824818509}
+  - component: {fileID: 114240295703767812}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -94,7 +95,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   increase: 10
   padding: 1
-  laserprefab: {fileID: 77501096903162476, guid: 3889f246a00078f4aaf9256b14b0979e,
+  laserprefab: {fileID: 7455015934289964993, guid: 29aaf741cf85a6245a73ff2a3026c873,
     type: 3}
   laservelocity: 20
   firingperiod: 0.05
+--- !u!114 &114240295703767812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8085556596824818506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3792c326c5f6e8d488c249beb50703df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

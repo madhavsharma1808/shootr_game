@@ -5,16 +5,36 @@ using UnityEngine;
 public class spawn : MonoBehaviour
 {
     [SerializeField] List<waveconfig> waves;
-    int startingwave=0;
+    [SerializeField] bool looping =false;
+    [SerializeField]int startingwave=0;
+    
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
+
+        //waveconfig waver = waves[startingwave];
+        //StartCoroutine(waveroute(waver));
+        do
+        {
+            yield return StartCoroutine(startlooping());
+            startingwave = 0;
+        } while (looping);
        
-        waveconfig waver = waves[startingwave];
-        StartCoroutine(waveroute(waver));
     }
 
+    IEnumerator startlooping()
+    {
+       
+            for (int i = 0; i < waves.Count; i++)
+            {
+                waveconfig waver = waves[startingwave];
+                yield return StartCoroutine(waveroute(waver));
+                startingwave++;
+            }
+            
+       
+    }
     IEnumerator waveroute(waveconfig waver)
     {
         for (int i = 0; i < waver.Getenemynumber(); i++)
@@ -23,7 +43,7 @@ public class spawn : MonoBehaviour
             newenemy.GetComponent<wave>().Setwavepath(waver);
             yield return new WaitForSeconds(waver.Gettimebspawns());
         }
-
+        
     }
     // Update is called once per frame
     void Update()

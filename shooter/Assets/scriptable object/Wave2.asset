@@ -16,5 +16,5 @@ MonoBehaviour:
   wave: {fileID: 5913704404893561168, guid: 4a5e7a80a78d78e4ebcf6e5babc744ef, type: 3}
   timebspawns: 1
   random: 1
-  numberofenemies: 5
-  speed: 1
+  numberofenemies: 2
+  speed: 3
