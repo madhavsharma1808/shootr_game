@@ -6,13 +6,9 @@ public class health : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    int maxhealth = 20;
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        maxhealth = maxhealth - 10;
-        if(maxhealth<=0)
-        {
-            Destroy(gameObject);
-        }
+        Destroy(collision.gameObject);
     }
 }
