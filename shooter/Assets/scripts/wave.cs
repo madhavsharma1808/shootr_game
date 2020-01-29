@@ -16,11 +16,6 @@ public class wave : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Destroy(gameObject);
-    }
-
     void Update()
     {
         waveform();

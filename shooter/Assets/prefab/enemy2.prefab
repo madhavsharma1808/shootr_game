@@ -13,9 +13,12 @@ GameObject:
   - component: {fileID: 8791059220404110675}
   - component: {fileID: 8791059220404110672}
   - component: {fileID: 50942418259193466}
+  - component: {fileID: 114869995606445900}
+  - component: {fileID: 114964302723787458}
+  - component: {fileID: 114577444794051662}
   m_Layer: 0
   m_Name: enemy2
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,3 +160,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &114869995606445900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791059220404110673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3792c326c5f6e8d488c249beb50703df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthpoints: 100
+--- !u!114 &114964302723787458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791059220404110673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c129f6cb46e1149a7e5f4d9787b2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breaking:
+  - {fileID: 21300000, guid: 77c92eaad6a50334d82c1dc9d953d3ae, type: 3}
+  - {fileID: 21300000, guid: 8793186e04f964a4c90e3263acf9e098, type: 3}
+--- !u!114 &114577444794051662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791059220404110673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 014c69d846476e3498ee4c062dbe06d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemymissile: {fileID: 21300000, guid: 28998cf34373d99449467927bbbf7adc, type: 3}

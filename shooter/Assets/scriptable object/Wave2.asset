@@ -17,4 +17,4 @@ MonoBehaviour:
   timebspawns: 1
   random: 1
   numberofenemies: 2
-  speed: 3
+  speed: 1
