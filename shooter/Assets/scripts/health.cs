@@ -12,15 +12,17 @@ public class health : MonoBehaviour
         return healthpoints;
     }
     private void OnTriggerEnter2D(Collider2D collision)
-    {
+    {   if(tag=="enemy")
+        { 
             if(healthpoints>0)
             {
                 healthpoints = healthpoints -20;
             }
-            if(healthpoints<=0)
+            if (healthpoints <= 0)
             {
-            Destroy(gameObject);
-            Debug.Log("ERROR");
+                Destroy(gameObject);
+                Debug.Log("ERROR");
+            }
             }
 
 
