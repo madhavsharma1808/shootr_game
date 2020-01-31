@@ -12,7 +12,7 @@ public class health : MonoBehaviour
         return healthpoints;
     }
     private void OnTriggerEnter2D(Collider2D collision)
-    {   if(tag=="enemy")
+    {   if(tag=="enemy" && tag!="redlaser")
         { 
             if(healthpoints>0)
             {
@@ -25,7 +25,7 @@ public class health : MonoBehaviour
             }
             }
 
-
+            
 
     }
 }

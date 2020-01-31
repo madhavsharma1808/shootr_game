@@ -14,6 +14,8 @@ public class enemybackfire : MonoBehaviour
     {
         waveconfig = FindObjectOfType<waveconfig>();
         StartCoroutine(enemyfire());
+
+
     }
 
     // Update is called once per frame
@@ -27,8 +29,8 @@ public class enemybackfire : MonoBehaviour
         while (true)
         {
 
-            var enemy = Instantiate(enemymissile, transform.position, Quaternion.identity);
-            enemy.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, lvelocity * Time.deltaTime);
+            var enemy = Instantiate(enemymissile, transform.position, Quaternion.identity) as GameObject;
+            enemy.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, -lvelocity );
             yield return new WaitForSeconds(timebwlasers);
         }
     }

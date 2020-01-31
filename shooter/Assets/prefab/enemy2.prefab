@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 50942418259193466}
   - component: {fileID: 114869995606445900}
   - component: {fileID: 114964302723787458}
-  - component: {fileID: 114577444794051662}
-  m_Layer: 0
+  - component: {fileID: 114432087157434940}
+  m_Layer: 9
   m_Name: enemy2
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -188,7 +188,7 @@ MonoBehaviour:
   breaking:
   - {fileID: 21300000, guid: 77c92eaad6a50334d82c1dc9d953d3ae, type: 3}
   - {fileID: 21300000, guid: 8793186e04f964a4c90e3263acf9e098, type: 3}
---- !u!114 &114577444794051662
+--- !u!114 &114432087157434940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 014c69d846476e3498ee4c062dbe06d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemymissile: {fileID: 5080735469720649876, guid: 754b99c896e9afc409d16a7b7f611403,
+  enemymissile: {fileID: 7455015934289964993, guid: 29aaf741cf85a6245a73ff2a3026c873,
     type: 3}
-  timebwlasers: 0.8
-  lvelocity: 2
+  timebwlasers: 0.5
+  lvelocity: 15

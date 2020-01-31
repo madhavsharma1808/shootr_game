@@ -6,6 +6,8 @@ TagManager:
   tags:
   - enemy
   - player
+  - bluelaser
+  - redlaser
   layers:
   - Default
   - TransparentFX
@@ -15,10 +17,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - player
+  - enemy
+  - player laser
+  - enemy laser
   - 
   - 
   - 

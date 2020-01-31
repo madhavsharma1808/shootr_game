@@ -11,12 +11,10 @@ GameObject:
   - component: {fileID: 8085556596824818511}
   - component: {fileID: 8085556596824818508}
   - component: {fileID: 8085556596824818509}
-  - component: {fileID: 114240295703767812}
   - component: {fileID: 50697581365640024}
   - component: {fileID: 70842116660057092}
-  - component: {fileID: 114331480774658716}
-  - component: {fileID: 114154844616952626}
-  m_Layer: 0
+  - component: {fileID: 114776763573998832}
+  m_Layer: 8
   m_Name: car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,23 +97,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   increase: 10
   padding: 1
-  laserprefab: {fileID: 7455015934289964993, guid: 29aaf741cf85a6245a73ff2a3026c873,
+  laserprefab: {fileID: 5080735469720649876, guid: 754b99c896e9afc409d16a7b7f611403,
     type: 3}
   laservelocity: 20
   firingperiod: 0.05
---- !u!114 &114240295703767812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8085556596824818506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3792c326c5f6e8d488c249beb50703df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthpoints: 100
 --- !u!50 &50697581365640024
 Rigidbody2D:
   serializedVersion: 4
@@ -153,7 +138,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 3.5999997, y: 4.4999995}
   m_Direction: 0
---- !u!114 &114331480774658716
+--- !u!114 &114776763573998832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,18 +147,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8085556596824818506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18a9755b11124e14b904a6bdf950bff5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114154844616952626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8085556596824818506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecad1b81c117ca5498d35c26c9ea1db8, type: 3}
+  m_Script: {fileID: 11500000, guid: fe450884f715972498e6cd255f7b6366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
