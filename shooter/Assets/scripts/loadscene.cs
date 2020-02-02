@@ -6,8 +6,14 @@ using UnityEngine.SceneManagement;
 public class loadscene : MonoBehaviour
 {
     // Start is called before the first frame update
-   public void nextscene()
+    public void nextscene()
     {
         SceneManager.LoadScene("core game");
+    }
+
+    public void loadinstruction()
+
+    {
+        SceneManager.LoadScene("instructions");
     }
 }

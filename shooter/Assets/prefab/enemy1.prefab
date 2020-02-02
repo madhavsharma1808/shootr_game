@@ -184,6 +184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthpoints: 100
+  timeafterexplosion: 1
+  explosionmaterial: {fileID: 5805772859442607658, guid: 1703966d8e4199e4da55e3f679305de2,
+    type: 3}
 --- !u!114 &114741249875558866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,3 +218,4 @@ MonoBehaviour:
     type: 3}
   timebwlasers: 0.5
   lvelocity: 10
+  enemylaserclip: {fileID: 8300000, guid: d483e3a7431d0b7419b72c23455ae89e, type: 3}
